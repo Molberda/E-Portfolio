@@ -127,3 +127,28 @@ nav {
     font-size: 18px;
     padding: 12px;
 }
+
+.fa-instagram{
+    transition: all 300ms;
+}
+
+.fa-instagram:hover{
+    color: #7537e0;
+    font-size: 22px;
+}
+.fa-github{
+    transition: all 300ms;
+}
+
+.fa-github:hover{
+    color: #7537e0;
+    font-size: 22px;
+}
+.fa-file-pdf{
+    transition: all 300ms;
+}
+
+.fa-file-pdf:hover{
+    color: #7537e0;
+    font-size: 22px;
+}
