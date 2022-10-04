@@ -124,5 +124,6 @@ nav {
 }
 
 .about-me__links--specific{
-    margin: 8px;
+    font-size: 18px;
+    padding: 12px;
 }
