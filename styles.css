@@ -95,6 +95,12 @@ nav {
   flex-direction: column;
 }
 
+.about-me__info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
 .about-me__info--container {
   display: flex;
   flex-direction: column;
@@ -154,4 +160,14 @@ nav {
 .fa-file-pdf:hover{
     color: #7537e0;
     font-size: 22px;
+}
+
+.about-me__img--container{
+flex: 1;
+display: flex;align-items: center;
+margin-right: 30px;
+}
+
+.about-me__img{
+    width: 100%;
 }
