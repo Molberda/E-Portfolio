@@ -17,7 +17,7 @@ span {
   line-height: 1.25;
 }
 
-.section__title{
+.section__title {
   font-size: 30px;
 }
 
@@ -34,9 +34,6 @@ li {
 }
 .flex1 {
   flex: 1;
-}
-
-.container{
 }
 
 .row {
@@ -186,7 +183,7 @@ nav {
 /* LANGUAGES */
 
 #languages {
-  background-color: rgb(226, 226, 226);
+  background-color: #e2e2e2;
   border-radius: 30px;
   padding: 20px;
   max-width: 900px;
@@ -200,54 +197,74 @@ nav {
   justify-content: center;
 }
 
-.language{
-width: 25%;
-margin: 0 12px;
-display: flex;justify-content: center;
-position: relative;
-transition: all 300ms ease;
+.language {
+  width: 25%;
+  margin: 0 12px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: all 300ms ease;
 }
 
 .language__img--container {
-    display: flex;justify-content: center;align-items: center;
-    padding: 25px 16px;
-  }
-  
-  .language__img {
-    width: 100%;
-    max-width: 100px;
-    margin-bottom: 8px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 16px;
+}
 
-  .language:hover{
-    transform: scale(.90);
-    filter: brightness(.85);
-  }
+.language__img {
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 8px;
+}
 
-  .language__name{
-    position: absolute;
-    bottom: 0;
-    transform: scale(0);
-  }
+.language:hover {
+  transform: scale(0.9);
+  filter: brightness(0.85);
+}
 
-  .language:hover .language__name{
-    transform: scale(1);
-    color: #858585;
-    font-size: 20px;
-  }
+.language__name {
+  position: absolute;
+  bottom: 0;
+  transform: scale(0);
+}
+
+.language:hover .language__name {
+  transform: scale(1);
+  color: #858585;
+  font-size: 20px;
+}
 
 /*PROJECTS*/
 
-.project__list{
-    margin-top: 32px;
+.project__list {
+  margin-top: 32px;
 }
 
-.project__wrapper{
-    box-shadow:  0px 20px 80px rgba(0, 0, 0, .7);
-    border-radius: 50px;
+.project__img {
+  width: 100%;
 }
 
-  .project__img{
-    width: 100%;
-    border-radius: 50px;
-  }
+.project__wrapper {
+  display: flex;
+  box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project__wrapper:before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: #1c1d25;
+opacity: 0;
+}
+
+.project:hover .project__wrapper:before {
+  opacity: 0.6;
+}
