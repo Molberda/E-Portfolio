@@ -279,5 +279,5 @@ z-index: 2;
 
 .project:hover .project__img{
   transform: scale(1.07);
-  filter: blur(3px);
+  filter: blur(2px);
 }
