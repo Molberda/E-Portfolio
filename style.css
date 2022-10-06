@@ -533,4 +533,8 @@ footer {
     transform: translateX(35px);
   }
 
+  .row{
+    width: 92%;
+  }
+
 }
