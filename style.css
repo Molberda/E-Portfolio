@@ -154,6 +154,21 @@ nav {
   overflow: hidden;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   margin-bottom: 28px;
+  animation: animate-profile-pic 800ms 200ms backwards;
+}
+
+@keyframes animate-profile-pic{
+
+0% {
+  transform: scale(0);
+}
+40% {
+  transform: scale(1.5);
+}
+100% {
+  transform: scale(1);
+}
+
 }
 
 .about-me__picture {
@@ -166,6 +181,22 @@ nav {
 }
 .about-me__info--para {
   margin-bottom: 28px;
+}
+
+.about-me__links, .about-me__info--para, .about-me__info--title
+{
+animation: fadeup 800ms 500ms backwards;
+}
+
+@keyframes fadeup{
+  0%{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .about-me__links--specific {
@@ -214,6 +245,7 @@ nav {
   display: flex;
   align-items: center;
   margin-right: 30px;
+  animation: animate-profile-pic 1000ms 1000ms backwards;
 }
 
 .about-me__img {
