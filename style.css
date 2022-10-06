@@ -183,6 +183,23 @@ nav {
   margin-bottom: 28px;
 }
 
+.wave{
+  display: inline-block;
+animation: animate-wave 1500ms infinite alternate-reverse ease-in-out;
+}
+ 
+@keyframes animate-wave{
+  0%{
+   transform: rotate(0);
+  }
+  50%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
 .about-me__links, .about-me__info--para, .about-me__info--title
 {
 animation: fadeup 800ms 500ms backwards;
