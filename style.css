@@ -39,6 +39,7 @@ content: "";
 position: absolute;
 background-color: black;
 width: 0%; height: 3px;
+border-radius: 3px;
 bottom: -3px;
 right: 0;
 transition: all 300ms ease;
@@ -47,6 +48,10 @@ transition: all 300ms ease;
 .link__hover-effect:hover:after{
   width: 100%;
   left: 0;
+}
+
+.link__hover-effect--white:after{
+  background-color: white;
 }
 
 li {
